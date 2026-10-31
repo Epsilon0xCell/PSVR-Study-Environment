@@ -1,13 +1,25 @@
 #!/bin/bash
 
 # Specify input and output files
-# I fixed these names instead of taking arguments. The script only
-# works when I run it from the folder holding vr.mp4 and non360.mp4,
-# and the not found error below is the price of that choice: from any
-# other folder it looks like the files do not exist.
-INPUT_VIDEO="vr.mp4"         # 360 VR video
-OVERLAY_VIDEO="non360.mp4"   # non-360 video shown in the center of the 360 video
-OUTPUT_VIDEO="output.mp4"    # 360 VR video with the overlay added in the center
+# These names are defaults, not fixed paths. The script used to work
+# only when run from the folder holding vr.mp4 and non360.mp4, which
+# made a missing file and a wrong folder look like the same error.
+# Positional arguments override each name in order:
+#   ./study-generate.sh [background.mp4] [overlay.mp4] [output.mp4]
+# and --help prints that without needing ffmpeg installed.
+if [ "${1:-}" = "-h" ] || [ "${1:-}" = "--help" ]; then
+    echo "Usage: ./study-generate.sh [background.mp4] [overlay.mp4] [output.mp4]"
+    echo "Defaults: vr.mp4, non360.mp4, output.mp4, read from the current folder."
+    echo "The overlay is placed in the center of the 360 background video."
+    exit 0
+fi
+if [ $# -gt 3 ]; then
+    echo "Error: expected at most three arguments (background, overlay, output)" >&2
+    exit 1
+fi
+INPUT_VIDEO="${1:-vr.mp4}"         # 360 VR video
+OVERLAY_VIDEO="${2:-non360.mp4}"   # non-360 video shown in the center of the 360 video
+OUTPUT_VIDEO="${3:-output.mp4}"    # 360 VR video with the overlay added in the center
 
 # The script needs ffmpeg and ffprobe
 # This check runs before the file check, so on a machine without
@@ -19,6 +31,14 @@ for tool in ffmpeg ffprobe; do
         exit 1
     fi
 done
+
+# The output must not be one of the inputs. ffmpeg opens the output
+# for writing while it is still reading the inputs, so naming an
+# input as the output would destroy that input mid run.
+if [ "$OUTPUT_VIDEO" = "$INPUT_VIDEO" ] || [ "$OUTPUT_VIDEO" = "$OVERLAY_VIDEO" ]; then
+    echo "Error: output file $OUTPUT_VIDEO is also an input file"
+    exit 1
+fi
 
 # The input files must exist before anything else runs
 for file in "$INPUT_VIDEO" "$OVERLAY_VIDEO"; do

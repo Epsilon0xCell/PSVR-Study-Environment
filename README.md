@@ -39,7 +39,11 @@ recording, so this is a study environment, not a workspace.
 
 Verified with ffmpeg 8.1: a 2 second 640x320 test background and a 1
 second test overlay produced a 1920x1080 output of about 6 seconds
-with the expected video and audio streams.
+with the expected video and audio streams. The test suite in
+`test_study_generate.py` (`python3 -m unittest`) repeats a real
+encode with one second generated clips and checks the output
+dimensions with ffprobe, along with the help, missing file, and
+output-is-an-input paths.
 
 ## Requirements
 
@@ -48,9 +52,13 @@ with the expected video and audio streams.
 
 ## Usage
 
-Name your files exactly as below, put them in one folder with the
-script, and run it from that folder. The script takes no arguments and
-has no menu.
+Name your files as below, put them in one folder with the script,
+and run it from that folder. The file names are defaults: up to three
+positional arguments override them in order (background, overlay,
+output), so `./study-generate.sh room.mp4 lesson.mp4 study.mp4` works
+from anywhere the paths resolve. `--help` prints the usage. Naming an
+input file as the output is refused, because ffmpeg would overwrite
+an input it is still reading. The script has no menu.
 
 ```
 vr.mp4        the 360 VR environment video
