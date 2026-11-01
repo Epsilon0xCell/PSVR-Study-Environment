@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="The Straw Bear procession from the side: shop fronts and a church spire sliding past far behind, the Bear swaying in the centre with his keeper and a drummer, and loose straw drifting across the kerb in front">
+  <rect width="1200" height="360" fill="#f4ecd8"/>
+  <!-- distant layer: horizon, bare trees, spire, shop fronts sliding past slowly -->
+  <rect y="0" width="1200" height="150" fill="#ccd3da"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-300 0;0 0" dur="90s" repeatCount="indefinite"/>
+    <g fill="#a8a294">
+      <rect x="60" y="70" width="150" height="80"/>
+      <rect x="260" y="62" width="170" height="88"/>
+      <rect x="480" y="70" width="150" height="80"/>
+      <rect x="680" y="62" width="170" height="88"/>
+      <rect x="900" y="70" width="150" height="80"/>
+      <rect x="1100" y="62" width="170" height="88"/>
+      <rect x="1320" y="70" width="150" height="80"/>
+    </g>
+    <g fill="#78828e">
+      <rect x="84" y="88" width="100" height="26"/>
+      <rect x="286" y="80" width="116" height="26"/>
+      <rect x="504" y="88" width="100" height="26"/>
+      <rect x="706" y="80" width="116" height="26"/>
+      <rect x="924" y="88" width="100" height="26"/>
+      <rect x="1126" y="80" width="116" height="26"/>
+    </g>
+    <g stroke="#4a463f" stroke-width="3">
+      <line x1="1245" y1="150" x2="1245" y2="96"/>
+      <line x1="1245" y1="112" x2="1228" y2="88"/>
+      <line x1="1245" y1="106" x2="1262" y2="84"/>
+    </g>
+    <g fill="#5c5c62">
+      <rect x="1150" y="66" width="14" height="84"/>
+      <path d="M1146 66 L1157 38 L1168 66 Z"/>
+    </g>
+  </g>
+  <rect y="150" width="1200" height="130" fill="#8a8d90"/>
+  <!-- central layer: the Bear swaying, keeper in step, drummer -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-2 520 268;2 520 268;-2 520 268" dur="6s" repeatCount="indefinite"/>
+    <path d="M448 268 L452 168 Q520 118 588 168 L592 268 Z" fill="#d9a83c"/>
+    <g stroke="#ba8c2c" stroke-width="3">
+      <line x1="484" y1="140" x2="482" y2="262"/>
+      <line x1="520" y1="128" x2="520" y2="262"/>
+      <line x1="556" y1="140" x2="558" y2="262"/>
+    </g>
+    <ellipse cx="498" cy="168" rx="7" ry="5" fill="#1e1c18"/>
+    <ellipse cx="542" cy="168" rx="7" ry="5" fill="#1e1c18"/>
+    <ellipse cx="520" cy="192" rx="17" ry="11" fill="#e8ba54"/>
+    <rect x="486" y="212" width="68" height="7" fill="#a83c2e"/>
+    <g stroke="#d9a83c" stroke-width="2">
+      <line x1="450" y1="200" x2="436" y2="196"><animate attributeName="x2" values="436;432;436" dur="3s" repeatCount="indefinite"/></line>
+      <line x1="590" y1="210" x2="604" y2="206"><animate attributeName="x2" values="604;608;604" dur="3s" repeatCount="indefinite"/></line>
+      <line x1="452" y1="240" x2="438" y2="244"><animate attributeName="x2" values="438;434;438" dur="3s" begin="1s" repeatCount="indefinite"/></line>
+    </g>
+    <ellipse cx="486" cy="272" rx="17" ry="6" fill="#ba8c2c"/>
+    <ellipse cx="556" cy="266" rx="17" ry="6" fill="#ba8c2c"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" repeatCount="indefinite"/>
+    <line x1="648" y1="222" x2="636" y2="272" stroke="#1e1c18" stroke-width="6"/>
+    <line x1="648" y1="222" x2="662" y2="272" stroke="#1e1c18" stroke-width="6"/>
+    <line x1="648" y1="168" x2="648" y2="224" stroke="#404248" stroke-width="15"/>
+    <circle cx="648" cy="158" r="10" fill="#c4a484"/>
+    <line x1="642" y1="188" x2="606" y2="212" stroke="#c4a484" stroke-width="5"/>
+    <line x1="656" y1="190" x2="676" y2="238" stroke="#6e5638" stroke-width="4"/>
+  </g>
+  <g>
+    <line x1="742" y1="222" x2="732" y2="272" stroke="#1e1c18" stroke-width="6"/>
+    <line x1="742" y1="222" x2="754" y2="272" stroke="#1e1c18" stroke-width="6"/>
+    <line x1="742" y1="172" x2="742" y2="224" stroke="#60463c" stroke-width="15"/>
+    <circle cx="742" cy="162" r="10" fill="#c4a484"/>
+    <ellipse cx="742" cy="238" rx="25" ry="9" fill="#f0eee6"/>
+    <rect x="717" y="238" width="50" height="22" fill="#a83c2e"/>
+    <line x1="748" y1="196" x2="730" y2="230" stroke="#1e1c18" stroke-width="4">
+      <animateTransform attributeName="transform" type="rotate" values="0 748 196;-32 748 196;0 748 196" dur="3s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  <!-- front layer: kerb, drifting straw, a dropped mitten, the banner pole passing -->
+  <rect y="280" width="1200" height="80" fill="#a9abae"/>
+  <rect y="280" width="1200" height="9" fill="#8f9194"/>
+  <g stroke="#d9a83c" stroke-width="2.5">
+    <line x1="120" y1="330" x2="142" y2="327">
+      <animateTransform attributeName="transform" type="translate" values="0 0;46 0;0 0" dur="17s" repeatCount="indefinite"/>
+    </line>
+    <line x1="700" y1="344" x2="724" y2="341">
+      <animateTransform attributeName="transform" type="translate" values="0 0;38 0;0 0" dur="21s" repeatCount="indefinite"/>
+    </line>
+    <line x1="980" y1="318" x2="1002" y2="315">
+      <animateTransform attributeName="transform" type="translate" values="0 0;30 0;0 0" dur="13s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  <g fill="#a83c2e">
+    <path d="M300 322 q16 -12 26 0 l0 14 q-13 7 -26 0 Z"/>
+    <rect x="318" y="308" width="8" height="13" rx="4"/>
+  </g>
+  <g opacity="0.92">
+    <rect x="0" y="96" width="7" height="196" fill="#6e5638">
+      <animate attributeName="x" values="-30;-30;1230;1230" keyTimes="0;0.72;0.97;1" dur="36s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

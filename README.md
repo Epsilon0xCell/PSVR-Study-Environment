@@ -1,8 +1,17 @@
-![banner](assets/banner.png)
+![An empty Whittlesey street waiting for the procession: loose straw on the tarmac, bundles leaning on a low wall, the folded costume head resting sideways on the pavement, and one long straw lying across the centre line](intro-banner.png)
 
 # PSVR-Study-Environment
 
+![The Straw Bear dancing in the centre of a Whittlesey street, his keeper beside him, musicians behind, onlookers at the edges, and the name hand painted on a cream parade banner at the rear](banner.png)
+
+![The procession from the side: the Bear swaying at the centre with his keeper and a drummer, shop fronts sliding past behind, loose straw drifting across the kerb in front](scene.svg)
+
+
+
 Custom PSVR study environment mp4 generator.
+
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
 
 ## The problem
 
@@ -16,6 +25,9 @@ and fast-forward the study video as needed.
 The limit, set by the PlayStation side, is that you cannot actively work
 on assignments this way. You record your desktop beforehand and study the
 recording, so this is a study environment, not a workspace.
+
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
 
 ## What the script does
 
@@ -45,10 +57,16 @@ encode with one second generated clips and checks the output
 dimensions with ffprobe, along with the help, missing file, and
 output-is-an-input paths.
 
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
+
 ## Requirements
 
 - Bash
 - ffmpeg and ffprobe (on PATH)
+
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
 
 ## Usage
 
@@ -72,6 +90,9 @@ chmod +x study-generate.sh
 
 The result is written to `output.mp4` in the same folder.
 
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
+
 ## Notes on preparing the videos
 
 - Find a 360 VR study environment on YouTube, download it (for example
@@ -87,6 +108,9 @@ The result is written to `output.mp4` in the same folder.
   are usually downloaded as webm at the highest quality, which is why a
   conversion step is often needed first.
 
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
+
 ## Semi-VR alternative
 
 For an active (interactive) setup instead: update the PSVR firmware,
@@ -94,6 +118,9 @@ turn on bigscreen / cinematic mode, hook the PSVR up to the PC, and work
 with keyboard and mouse while adjusting volume on the headset. The
 trade-off is that you get a giant movie theatre screen, not a 360
 environment.
+
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
 
 ## Not implemented
 
@@ -104,6 +131,9 @@ desktop recording menu, and prompts about cutting the video shorter.
 The script does exactly the steps listed under "What the script does"
 and nothing else.
 
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
+
 ## Thanks to
 
 - https://aur.archlinux.org/packages/kazam
@@ -113,6 +143,12 @@ and nothing else.
 - https://www.oodlestechnologies.com/blogs/PICTURE-IN-PICTURE-effect-using-FFMPEG/
 - https://superuser.com/questions/1093507/loop-a-video-overlay-with-ffmpeg
 - https://superuser.com/questions/1689522/ffmpeg-how-to-make-the-overlay-loop-till-the-end-of-the-main-video
+
+
+![Bundled straw strokes tied at intervals](sep-heavy.svg)
+
+
+> **Steward's notice.** Files must stay under the FAT32 size limit: PlayStation playback needs h264 encoding, above 30 fps, and under 4 GB per file.
 
 ## License
 

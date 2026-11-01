@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" role="img" aria-label="A short untied scatter of five straw strokes, centred">
+  <rect width="1200" height="30" fill="#f4ecd8"/>
+  <g stroke="#d9a83c" stroke-width="3.5" stroke-linecap="round">
+    <line x1="520" y1="8" x2="526" y2="24"/>
+    <line x1="556" y1="6" x2="560" y2="25"/>
+    <line x1="592" y1="9" x2="598" y2="23"/>
+    <line x1="628" y1="6" x2="632" y2="25"/>
+    <line x1="664" y1="8" x2="670" y2="24"/>
+  </g>
+</svg>
