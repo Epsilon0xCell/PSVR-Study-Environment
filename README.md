@@ -1,8 +1,10 @@
-![An empty Whittlesey street waiting for the procession: loose straw on the tarmac, bundles leaning on a low wall, the folded costume head resting sideways on the pavement, and one long straw lying across the centre line](intro-banner.png)
+![Intro: the cyclorama from just behind the benches, the nearest seats lit by the glow of the small central screen while the painted landscape curves away on every side](intro-banner.png)
 
 # PSVR-Study-Environment
 
-![The Straw Bear dancing in the centre of a Whittlesey street, his keeper beside him, musicians behind, onlookers at the edges, and the name hand painted on a cream parade banner at the rear](banner.png)
+<p align="center"><img src="logo.png" alt="PSVR-Study-Environment logo: a circular emblem of the painted cyclorama curving around inside a cream ring, its horizon banded blue and tan, with one small glowing screen standing at the centre" width="200"></p>
+
+![Banner: inside a round cyclorama theatre, a painted landscape wrapping the walls all the way around, wooden benches in rings on the floor, and one small bright screen standing at the centre, its face plain white](banner.png)
 
 ![The procession from the side: the Bear swaying at the centre with his keeper and a drummer, shop fronts sliding past behind, loose straw drifting across the kerb in front](scene.svg)
 
